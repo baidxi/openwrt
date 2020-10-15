@@ -529,6 +529,15 @@ define Device/comfast_cf-wr752ac-v1
 endef
 TARGET_DEVICES += comfast_cf-wr752ac-v1
 
+define Device/comfast_cf-wr610n
+  SOC := qca9531
+  DEVICE_VENDOR := COMFAST
+  DEVICE_MODEL := CF-WR610N
+  DEVICE_PACKAGES := swconfig -uboot-envtools
+  IMAGE_SIZE := 16192k
+endef
+TARGET_DEVICES += comfast_cf-wr610n
+
 define Device/compex_wpj344-16m
   SOC := ar9344
   DEVICE_PACKAGES := kmod-usb2
